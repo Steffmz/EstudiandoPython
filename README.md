@@ -1,2 +1,0 @@
-# EstudiandoPython
-clases con IA
