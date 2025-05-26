@@ -1,6 +1,6 @@
 lista = [3, 6, 43, 2, 132]
 
-numerogrande = lista[3]
+numerogrande = lista[0]
 
 for recorrido in lista:
     if recorrido > numerogrande:

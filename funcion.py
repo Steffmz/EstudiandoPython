@@ -1,10 +1,3 @@
-def saludar():
-    print("Hola")
-
-saludar()
-
-
-
 
 
 def obtener_saludo():
