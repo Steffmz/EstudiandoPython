@@ -1,33 +1,37 @@
 
-puntos_acumulados = 1500
-participacion_natacion = True
-participacion_ciclismo = True  
+print('Ingrese la cantidad de puntos acumulados en total:')
 
+try:
+    puntos = int(input())
+except ValueError:
+    print("Error: La cantidad de puntos debe ser un número entero válido.")
+    exit()
 
-tipo_cliente = ""
+print('Participo en las competencias de natacion? S / N:')
+natacion = input().upper() 
 
-if puntos_acumulados >= 1000:
-    if participacion_natacion:
-        if participacion_ciclismo:
-            tipo_cliente = "Cliente Diamante"  # 💎
-        else:
-            tipo_cliente = "Cliente Oro"       # 🥇
-    else: 
-        if participacion_ciclismo:
-            tipo_cliente = "Cliente Oro"       # 🥇
-        else:
-            tipo_cliente = "Cliente Plata"     # 🥈
-else:
-    if participacion_natacion:
-        if participacion_ciclismo:
-            tipo_cliente = "Cliente Bronce"    # 🥉
-        else:
-            tipo_cliente = "Cliente Plata"     # 🥈
-    else: 
-        if participacion_ciclismo:
-            tipo_cliente = "Cliente Bronce"    # 🥉
-        else:
-            tipo_cliente = "Cliente Platino"   # ✨
+print('Participo en las competencias de ciclismo? S / N:')
+ciclismo = input().upper() 
+if puntos >= 1000:
+    if natacion == 'S':
+        if ciclismo == 'S':
+            print('Cliente Diamante')
+        elif ciclismo == 'N':
+            print('Cliente Oro')
 
+    elif natacion == 'N':
+        if ciclismo == 'S':
+            print('Cliente Oro')
 
-print(f"El tipo de cliente es: {tipo_cliente}")
+            print('Cliente Plata')
+elif puntos < 1000:
+    if natacion == 'S':
+        if ciclismo == 'S':
+            print('Cliente Plata')
+        elif ciclismo == 'N':
+            print('Cliente Bronce')
+    elif natacion == 'N':
+        if ciclismo == 'S':
+            print('Cliente Bronce')  
+        elif ciclismo == 'N':
+            print('Cliente Platino')

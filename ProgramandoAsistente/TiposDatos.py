@@ -273,16 +273,16 @@
 # numeros_invertidos = numero_diez[::-1]
 # print(numeros_invertidos)
 
-""" Ejercicio 26 """
+# """ Ejercicio 26 """
 
-ranking = [("Ana", 85), ("Luis", 92), ("Eva", 78), ("Juan", 92), ("Leo", 88)]
-ranking.sort(key=lambda x: x[1], reverse=True)
-print(ranking)
+# ranking = [("Ana", 85), ("Luis", 92), ("Eva", 78), ("Juan", 92), ("Leo", 88)]
+# ranking.sort(key=lambda x: x[1], reverse=True)
+# print(ranking)
 
-jugadores=["Ana", "Luis", "Eva", "Juan", "Leo"]
-puntuaciones=[85, 92, 78, 92, 88]
-puntuaciones.sort(reverse=True)
-print(puntuaciones)
+# jugadores=["Ana", "Luis", "Eva", "Juan", "Leo"]
+# puntuaciones=[85, 92, 78, 92, 88]
+# puntuaciones.sort(reverse=True)
+# print(puntuaciones)
 
 # """ Ejercicio 27 """
 
@@ -310,3 +310,37 @@ print(puntuaciones)
 
 # temperatura.reverse()
 # print("Temperaturas ordenadas de mayor a menor:", temperatura)
+
+""" Ejercicio 29 """
+
+coordenada_2d = (3, 7)
+coordenada_3d = (1, 4, 9)
+
+print(coordenada_2d, coordenada_3d)
+
+#coordenada_2d[0] = 10
+
+print(coordenada_3d[1])
+
+""" Ejercicio 30 """
+
+info_libro = ("Cien Años de Soledad", "Gabriel Garcia Marquez", 1967)
+
+x, y, z = info_libro
+print(f"Titulo del libro: {x}.\n Autor: {y}.\n  Año: {z}.")
+
+""" Ejercicio 31 """
+
+colores_frecuentes = ("rojo", "azul", "verde", "rojo", "amarillo", "azul", "rojo")
+
+for color in colores_frecuentes:
+    print(color)
+
+print(f"Aparicion del color rojo: {colores_frecuentes.count("rojo")} veces")
+print(f"Indice de la primera aparicion del color verde: {colores_frecuentes.index("verde")}")
+
+""" Ejercicio 32 """
+
+min_max_valores = (10, 95)
+valor_minimo, valor_maximo = min_max_valores
+print(f"El valor minimo es {valor_minimo} y el valor maximo es {valor_maximo}.")
