@@ -259,3 +259,54 @@
 # print(pares)
 # print(impares)
 
+# """ Ejercicio 25 """
+
+# numero_diez = list(range(11))#Genera una lista del 0 al 10
+# print(numero_diez[0:5])      #Imprime los 5 primeros numeros osea 0,1,2,3,4
+
+# print(numero_diez[3:8])      #imprime del 3 al 7
+
+# print(numero_diez[-3:])      #Imprime los ultimos 3
+
+# print(numero_diez[0:11:2]) #Imprime del 0 al 10 pero de dos en dos
+
+# numeros_invertidos = numero_diez[::-1]
+# print(numeros_invertidos)
+
+""" Ejercicio 26 """
+
+ranking = [("Ana", 85), ("Luis", 92), ("Eva", 78), ("Juan", 92), ("Leo", 88)]
+ranking.sort(key=lambda x: x[1], reverse=True)
+print(ranking)
+
+jugadores=["Ana", "Luis", "Eva", "Juan", "Leo"]
+puntuaciones=[85, 92, 78, 92, 88]
+puntuaciones.sort(reverse=True)
+print(puntuaciones)
+
+# """ Ejercicio 27 """
+
+# inventario=["manzana", "banana", "naranja", "manzana", "uva", "banana", "manzana"]
+
+# cuantas_manzanas_hay=inventario.count("manzana")
+# posicion_naranja=inventario.index("naranja")
+
+# print("Manzana(s):", cuantas_manzanas_hay)
+# print("Naranja(s):", posicion_naranja)
+
+# if "pera" in inventario:
+#     print(inventario.index('pera'))
+# else:
+#     print("Lo siento, no tenemos pera(s).")
+
+# """ Ejercicio 28 """
+
+# temperatura=[22.5, 23.1, 22.8, 21.9, 23.5, 24.0, 21.5, 22.8, 23.1]
+
+# temperatura.sort()
+
+# print("La temperatura mas baja registrada fue:", temperatura[0])
+# print("La temperatura mas alta registrada fue:", temperatura[-1])
+
+# temperatura.reverse()
+# print("Temperaturas ordenadas de mayor a menor:", temperatura)
